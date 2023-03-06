@@ -1,0 +1,28 @@
+<header>
+    <nav>
+        <ul class="snip1143">
+            <li class="{% if index %}active{% endif %}">
+                <a href="{{ url_for('index') }}" data-hover="Home">Home</a>
+            </li>
+            <li class="{% if courses %}active{% endif %}">
+                <a href="{{ url_for('courses') }}" data-hover="Classes">Classes</a>
+            </li>
+            {% if not session["username"] %}
+            <li class="{% if register %}active{% endif %}">
+                <a href="{{ url_for('register') }}" data-hover="Registration">Registration</a>
+            </li>
+            {% endif %}
+            <li class="{% if enrollment %}active{% endif %}">
+                <a href="{{ url_for('enrollment') }}" data-hover="Enrollment">Enrollment</a>
+            </li>
+            {% if not session["username"] %}
+            <li class="{% if login %}active{% endif %}">
+                <a href="{{ url_for('login') }}" data-hover="Login">Login</a>
+            </li>
+            {% else %}
+            <li><a href="{{ url_for('logout') }}" data-hover="Logout">Logout</a>
+            </li>
+            {% endif %}
+        </ul>
+    </nav>
+</header>

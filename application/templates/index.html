@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col-md-12 text-center">
+        <h2>Welcome to PyLadies Academy!</h2>
+        {% if session["username"] %}
+        <h3>Let's get started.</h3>
+        {% else %}
+        <p>Already registered? <a href='{{ url_for("login") }}'>Login</a></p>
+        {% endif %}
+    </div>
+    <hr>
+    <div>
+        <p>
+            This project was created as Flask study project. Main goal was to learn the Flask and some of its extensions and to create simple web application. Pretty code was not priority. The author is aware that many parts are missing (like logging, tests, ...).
+        </p>
+    </div>
+    <hr>
+    <div class="col-md-12 text-center">
+        <h3>About PyLadies</h3>
+        <p>
+            PyLadies are an international mentorship group with a focus on helping more women become active participants and
+            leaders in the Python open-source community. Main mission is to promote, educate and advance a diverse Python
+            community through outreach, education, conferences, events and social gatherings.
+
+            PyLadies also aims to provide a friendly support network for women and a bridge to the larger Python world.
+            Anyone with an interest in Python is encouraged to participate!
+        </p>
+    </div>
+
+</div>
+
+{% endblock %}

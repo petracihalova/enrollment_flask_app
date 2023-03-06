@@ -1,0 +1,37 @@
+[
+    {
+        "course_id": "1111",
+        "description": "Python I. Fundamentals",
+        "level": 1,
+        "term": "Fall",
+        "title": "Python I"
+    },
+    {
+        "course_id": "2222",
+        "description": "Python II. Advanced",
+        "level": 2,
+        "term": "Spring",
+        "title": "Python II"
+    },
+    {
+        "course_id": "3333",
+        "description": "Linux I. Fundamentals",
+        "level": 1,
+        "term": "Spring",
+        "title": "Linux I"
+    },
+    {
+        "course_id": "4444",
+        "description": "SQL I. Introduction",
+        "level": 1,
+        "term": "Fall",
+        "title": "SQL I"
+    },
+    {
+        "course_id": "5555",
+        "description": "Python III. Web Development",
+        "level": 3,
+        "term": "Fall",
+        "title": "Python III"
+    }
+]
